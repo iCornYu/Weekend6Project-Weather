@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script defer src="main.js"></script>
+<title>Title</title>
+</head>
+<body>
+    <div class="container" style="text-align:center;">
+        <h1 style="padding-bottom: 2rem; padding-top:2rem;"><img style = "width:100px; height:auto; padding-right:1rem;" src='https://images-na.ssl-images-amazon.com/images/I/41hzbXlmykL.png'>Weather Forecast</h1>
+        <div class="d-flex align-items-center">
+            <form id="weatherAPI" class="d-flex justify-content-center align-items-center">
+                <div style="padding-right:3rem;">
+                    <label for="weather">Enter city/zipcode: </label>
+                </div>
+                <div style="padding-right:2rem;">
+                    <input name="weather" id=weather type="text" style="height:50px; width:750px;" placeholder="Enter city name or zipcode here">
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            <div>
+                <button type="submit" class="btn btn-danger" style="margin-left:0.5rem;" onclick="clearData()">Clear</button>
+            </div>
+        </div>
+        <section class="weather-info" style="margin-top:3rem;">
+
+        </section>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
